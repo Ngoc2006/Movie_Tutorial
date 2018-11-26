@@ -151,6 +151,8 @@
             bool isSqlServer = serverType.StartsWith("SqlServer", StringComparison.OrdinalIgnoreCase);
             bool isOracle = !isSqlServer && serverType.StartsWith("Oracle", StringComparison.OrdinalIgnoreCase);
 
+            /*
+            // Bo qua dong lenh kiem tra nay de duoc phep tao DB theo y muon
             // safety check to ensure that we are not modifying an arbitrary database.
             // remove these lines if you want Movie_Tutorial migrations to run on your DB.
             if (!isOracle && cs.ConnectionString.IndexOf(typeof(SiteInitialization).Namespace +
@@ -159,6 +161,7 @@
                 SkippedMigrations = true;
                 return;
             }
+            */
 
             string databaseType = isOracle ? "OracleManaged" : serverType;
             var connectionString = cs.ConnectionString;
