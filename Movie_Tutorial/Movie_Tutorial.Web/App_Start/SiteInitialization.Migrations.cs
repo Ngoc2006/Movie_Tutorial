@@ -15,6 +15,7 @@
         private static string[] databaseKeys = new[] {
             "Default"
             , "Northwind"
+            , "Ngoc"
         };
 
         /// <summary>
