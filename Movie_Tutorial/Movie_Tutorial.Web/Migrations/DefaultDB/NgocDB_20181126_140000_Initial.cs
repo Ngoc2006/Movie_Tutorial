@@ -10,6 +10,10 @@ namespace Movie_Tutorial.Migrations.NgocDB
         public override void Up()
         {
             Console.WriteLine("Haha. Chay roi, de tao db moi");
+            /*
+            IfDatabase("SqlServer", "SqlServer2000", "SqlServerCe")
+                .Execute.EmbeddedScript("Movie_Tutorial.Migrations.NgocDB.NgocDBScript_SqlServer.sql");
+                */
         }
     }
 }
